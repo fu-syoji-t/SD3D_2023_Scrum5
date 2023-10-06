@@ -1,0 +1,363 @@
+/* 
+「階層チェック」
+:hover {
+    box-shadow: 0px 0px 3px 2px #999;
+}
+*/
+
+/*----- section1-1 -----*/
+/*----- 全体共通 -----*/
+
+body{/*
+    background-image: url("../A_img/overlord04.jpg"), url("../A_img/vinland-saga-askeladd-2400x1350.jpg");
+    background-color:rgba(255,255,255,0.45);
+    background-blend-mode: hard-light;
+    background-blend-mode: overlay;
+    background-size: 50% auto, 50% auto;
+    background-position: 0 0, 100% 0;
+    background-repeat: repeat-y, repeat-y;
+    */
+    color: #333;
+    font-family: 'Times New Roman';
+    overflow: auto;
+    padding-bottom: 15vh;
+}
+
+#scrollToTop{
+    padding: 7px 14px;
+    border-radius: 100%;
+    font-size: 1.7rem;
+    background-color: rgba(0,0,0, 0.5);
+    color: #eff;
+
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+}
+
+.container{
+    min-width: 360px;
+}
+
+.nav{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-col{
+    flex-basis: calc(100% / 7);
+}
+
+.nav>a{
+    padding: 2px 0 0;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #000;
+    border-radius: 4px;
+}
+
+.header-title{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mb{
+    margin-bottom: 2rem;
+}
+
+input,
+textarea,
+select{
+    width: 100%;
+    padding: 8px;
+    border: 1.5px solid #333;
+    border-radius: 4px;
+    background-color: rgba(255,255,255, 0.7);
+    color: #000;
+}
+
+.nav>a:hover,
+input:hover,
+textarea:hover,
+select:hover,
+
+.G1-4-1 .tdiv:hover,
+.G1-6-1-1 .tdiv:hover,
+.G1-6-2-1 .tdiv:hover,
+.G1-10 .tdiv:hover,
+
+.source-box:hover{
+    box-shadow: 0px 0px 4px 1px #888;
+    z-index: 3;
+}
+
+.nav>a:focus,
+input:focus,
+textarea:focus,
+select:focus,
+
+.G1-4-1 .tdiv:active,
+
+.source-box:active{
+    outline: 4px solid rgba(136,136,136, 0.5);
+    z-index: 3;
+}
+
+input[type="submit"],
+input[type="button"]{
+    padding: 10px 0;
+    background-color: rgba(255,255,255, 0.6);
+    color: #000;
+}
+
+input[type="submit"].black,
+input[type="button"].black,
+
+.td .black{
+    background-color: rgba(0,0,0, 0.5);
+    color: #eff;
+}
+/*----- /section1-1 -----*/
+
+
+
+
+
+/*----- section1-2 -----*/
+/*----- テーブル用スタイル (G1-4, G1-5, G1-6, G1-7,) -----*/
+
+.tdiv{
+    border: 1.5px solid #333;
+    border-radius: 5.5px;
+    margin-bottom: 1.2rem;
+}
+
+.td{
+    background-color: rgba(255,255,255, 0.5);
+    border: 1.5px solid #333;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.post-title{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.2rem;
+}
+
+.rank,
+.rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+/*
+.text-display{
+    white-space: nowrap;
+    white-space: pre;
+    overflow: hidden;
+    max-height: 70vh;
+}
+*/
+.text-display{
+    padding: 1rem 0.5rem;
+    white-space: nowrap;
+    white-space: pre;
+    overflow: auto;
+    /*max-height: 170px;*/
+}
+.bi-chevron-compact-down{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-weight: bold;
+}
+
+.text-input{
+    padding: 1rem 0.5rem;
+    white-space: nowrap;
+    white-space: pre;
+    overflow: auto;
+    max-height: 80vh;
+}
+
+.status{
+    background-color: rgba(255,255,255, 0.5);
+    border: 1.5px solid #333;
+    border-radius: 4px;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.status-td{
+    padding: 2px 0;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+
+.event{
+    background-color: rgba(255,255,255, 0.5);
+    border: 1.5px solid #333;
+    border-radius: 5.5px;
+    margin-bottom: 1.2rem;
+}
+/*----- /section1-2 -----*/
+
+
+
+
+
+/*----- section1-3 -----*/
+/*----- モーダル用スタイル (G1-4-2, G1-4-3, G1-6-1-1, G1-6-1-2, G1-6-2) -----*/
+
+/* ファイル表示 */
+.source-box{
+    margin-bottom: 0.5rem;
+    padding: 0;
+    font-size: 0.75rem;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.justify-content-center>.black{
+    padding: 0 1rem;
+}
+
+.source-box>img{
+    margin: 0 -10px;
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+/* モーダルを非表示にする */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* モーダルのコンテンツ */
+.modal-content {
+    padding: 1%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #eee;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    max-height: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.modal-name{
+    margin: -0.5% 0 0.5%;
+    padding: 0 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-source{
+    object-fit: contain;
+    overflow: auto;
+}
+/*----- /section1-3 -----*/
+
+
+@media screen and (max-width: 767px) {
+
+    #scrollToTop{
+        display: none;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-height: 80%;/*100%*/
+    }
+
+
+    .nav{
+        background-color: #fafafa;
+        width: 101%;
+        min-width: 360px;
+        z-index: 5;
+
+        border-top: 1px solid #ccc;
+        padding: 4px 10px;
+
+        position: fixed;
+        transform: translate(-50%, 0%);
+        left: 50%;
+        bottom: -1px;
+    }
+    
+    .nav-col{
+        flex-basis: calc(100% / 6);
+    }
+
+    #nav-col-fixed{
+        font-size: 3rem;
+        right: 2px;
+        bottom: 65px;
+
+        padding: 4px 8px 0;
+        border-radius: 100%;
+
+        position: fixed;
+    }
+    #nav-col-fixed>i{
+        border-radius: 100%;
+        border-top: 3.5px solid rgba(0,0,0, 0);
+        border-left: 6px solid rgba(0,0,0, 0);
+        border-right: 6px solid rgba(0,0,0, 0);
+        background-color: rgba(250,250,250, 0.6);
+    }
+    .nav-col-out{
+        display: none;
+    }
+}
+
+
+
+
+
+
+.img-wrap{
+    width: auto;
+    height: auto;
+    display:flex;
+}
+.img-wrap img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+.flexbox div{
+    background: rgb(164, 175, 177);
+  margin: 10px;
+  width: 400px;
+  height: 120px;
+}
+

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<head>
+  <title>新規登録</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .btn {
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  color: rgb(0, 0, 0);
+  margin-left: auto;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>新規登録</h2>
+    <form action="register.php" method="post">
+      <label for="username">ユーザーID</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">パスワード</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+        <a href="nyuryoku.html"  class="btn">次へ</a>
+    </form>
+  </div>
+</body>
+</html>

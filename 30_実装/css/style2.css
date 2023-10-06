@@ -1,0 +1,29 @@
+
+/*----- section2 -----*/
+/*----- input表示用スタイル (G1-2-3, G1-3, G1-9-1, G1-9-3) -----*/
+
+input[type="text"],
+input[type="password"],
+select{
+    border: none;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+select:hover{
+    box-shadow: none;
+}
+
+/* 矢印消去 */
+select {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+/* ie対応 */
+select::-ms-expand {
+display: none;
+}
+/* /矢印消去 */
+
+/*----- /section2 -----*/

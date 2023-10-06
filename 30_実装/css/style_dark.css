@@ -1,0 +1,135 @@
+/* 
+「階層チェック」
+:hover {
+    box-shadow: 0px 0px 3px 2px #999;
+}
+*/
+
+/*----- section1-1 -----*/
+/*----- 全体共通 -----*/
+
+#scrollToTop{
+    background-color: rgba(0,0,0, 0.5);
+    color: #eff;
+}
+
+.nav{
+    border-bottom: 1px solid #ccc;
+}
+
+.nav>a{
+    color: #000;
+}
+
+input,
+textarea,
+select{
+    background-color: rgba(0,0,0, 0.5);
+    color: #eff;
+}
+/*
+.nav>a:hover,
+input:hover,
+textarea:hover,
+select:hover,
+
+.G1-4-1 .tdiv:hover,
+.G1-6-1-1 .tdiv:hover,
+.G1-6-2-1 .tdiv:hover,
+
+.source-box:hover{
+    box-shadow: 0px 0px 4px 1px #888;
+}
+*//*
+.nav>a:focus,
+input:focus,
+textarea:focus,
+select:focus,
+
+.G1-4-1 .tdiv:active,
+
+.source-box:active{
+    outline: 4px solid rgba(136,136,136, 0.5);
+}
+*/
+input[type="submit"],
+input[type="button"]{
+    background-color: rgba(0,0,0, 0.5);
+    color: #eff;
+}
+
+input[type="submit"].black,
+input[type="button"].black,
+
+.td .black{
+    background-color: rgba(255,255,255, 0.6);
+    color: #000;
+}
+/*----- /section1-1 -----*/
+
+
+
+
+
+/*----- section1-2 -----*/
+/*----- テーブル用スタイル (G1-4, G1-5, G1-6, G1-7,) -----*/
+
+.td{
+    background-color: rgba(0,0,0, 0.5);
+    color: #eff;
+}
+/*
+.rank,
+.rate{
+
+}
+*/
+.status{
+    background-color: rgba(0,0,0, 0.5);
+    color: #eff;
+}
+
+.event{
+    background-color: rgba(0,0,0, 0.5);
+    color: #eff;
+}
+/*----- /section1-2 -----*/
+
+
+
+
+
+/*----- section1-3 -----*/
+/*----- モーダル用スタイル (G1-4-2, G1-4-3, G1-6-1-1, G1-6-1-2, G1-6-2) -----*/
+
+/* ファイル表示 */
+
+/* モーダルを非表示にする */
+.modal {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* モーダルのコンテンツ */
+.modal-content {
+    background-color: #333;
+    color: #eff;
+}
+/*----- /section1-3 -----*/
+
+
+@media screen and (max-width: 767px) {
+
+    .nav{
+        background-color: #333;
+        color: #eff;
+        border-top: 1px solid #ccc;
+    }
+
+    .nav > a{
+        color: #eff;
+    }
+    
+    #nav-col-fixed>i{
+        background-color: rgba(0,0,0, 0.5);
+    }
+}
